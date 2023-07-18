@@ -1,0 +1,11 @@
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --main-color: #abc442;
+    --second-color: #2b4439;
+    --white-color: #fff;
+    --black-color: #000;
+}

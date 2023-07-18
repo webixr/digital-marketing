@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>digital marketing</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="index.css">
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="w-screen h-20 bg-[var(--main-color)]">
+    <div class="w-full xl:w-[1170px] h-full mx-auto max-xl:px-3">
+      <!-- desktop container start -->
+      <div id="for-Desk" class="max-lg:hidden w-full h-full flex items-center justify-between">
+        <!-- logo container -->
+        <a href="#" class="block w-48 h-8">
+          <img src="./assets/logo.png" class="w-full h-full" />
+        </a>
+
+        <!-- menu -->
+        <ul class="w-96 flex justify-between">
+          <li><a href="#" class="block text-lg capitalize text-white hover:scale-105 duration-200">features</a></li>
+          <li><a href="#" class="block text-lg capitalize text-white hover:scale-105 duration-200">pricing</a></li>
+          <li><a href="#" class="block text-lg capitalize text-white hover:scale-105 duration-200">about</a></li>
+          <li><a href="#" class="block text-lg capitalize text-white hover:scale-105 duration-200">contact us</a></li>
+        </ul>
+
+        <!-- free trial button -->
+        <a href="#" class="text-white px-10 py-4 bg-[#ffffff2b] rounded-full border-[var(--main-color)] border hover:scale-105 duration-200">
+          free trial
+        </a>
+      </div>
+      <!-- desktop container end -->
+
+      <!-- mobile container start -->
+      <div id="for-Mobile" class="lg:hidden w-full h-full flex items-center justify-between">
+        <!-- logo out of menu -->
+        <a href="#" class="block w-48 h-8">
+          <img src="./assets/logo.png" class="w-full h-full" />
+        </a>
+
+        <!-- menu button -->
+        <button id="menuOpenBtn"><i class="fa-solid fa-bars text-2xl text-white"></i></button>
+
+        <div id="menu" class="-translate-x-80 opacity-0 hidden w-full max-w-xs h-screen absolute top-0 left-0 p-4 flex-col items-start bg-[var(--second-color)] duration-200">
+          <!-- logo and close section -->
+          <div class="w-full flex justify-between border-b border-[#dddddd83] pb-3">
+            <!-- logo container -->
+            <a href="#" class="block w-48 h-8">
+              <img src="./assets/logo.png" class="w-full h-full" />
+            </a>
+
+            <!-- close button -->
+            <button id="menuCloseBtn"><i class="fa-solid fa-xmark text-2xl text-white"></i></button>
+          </div>
+          
+          <!-- menu -->
+          <ul class="w-full flex flex-col gap-3 justify-between border-b border-[#dddddd83] py-3 mb-5">
+            <li><a href="#" class="block text-lg capitalize text-white hover:pl-1 duration-200">features</a></li>
+            <li><a href="#" class="block text-lg capitalize text-white hover:pl-1 duration-200">pricing</a></li>
+            <li><a href="#" class="block text-lg capitalize text-white hover:pl-1 duration-200">about</a></li>
+            <li><a href="#" class="block text-lg capitalize text-white hover:pl-1 duration-200">contact us</a></li>
+          </ul>
+
+          <!-- free trial button -->
+          <a href="#" class="text-white px-10 py-4 bg-[#ffffff2b] rounded-full border-[var(--main-color)] border hover:scale-105 duration-200 self-stretch text-center">
+            free trial
+          </a>
+        </div>
+
+
+      </div>
+      <!-- mobile container end -->
+
+    </div>
+  </nav>
+  <script src="./App.js"></script>
+</body>
+</html>
