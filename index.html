@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <nav class="w-screen h-20 bg-[var(--main-color)]">
+  <!-- navbar start -->
+  <nav class="w-full h-20 bg-transparent absolute top-0 left-0 z-50">
     <div class="w-full xl:w-[1170px] h-full mx-auto max-xl:px-3">
       <!-- desktop container start -->
       <div id="for-Desk" class="max-lg:hidden w-full h-full flex items-center justify-between">
@@ -27,14 +28,14 @@
 
         <!-- menu -->
         <ul class="w-96 flex justify-between">
-          <li><a href="#" class="block text-lg capitalize text-white hover:scale-105 duration-200">features</a></li>
-          <li><a href="#" class="block text-lg capitalize text-white hover:scale-105 duration-200">pricing</a></li>
-          <li><a href="#" class="block text-lg capitalize text-white hover:scale-105 duration-200">about</a></li>
-          <li><a href="#" class="block text-lg capitalize text-white hover:scale-105 duration-200">contact us</a></li>
+          <li><a href="#" class="block text-lg capitalize text-white hover:text-[var(--main-color)] duration-200">features</a></li>
+          <li><a href="#" class="block text-lg capitalize text-white hover:text-[var(--main-color)] duration-200">pricing</a></li>
+          <li><a href="#" class="block text-lg capitalize text-white hover:text-[var(--main-color)] duration-200">about</a></li>
+          <li><a href="#" class="block text-lg capitalize text-white hover:text-[var(--main-color)] duration-200">contact us</a></li>
         </ul>
 
         <!-- free trial button -->
-        <a href="#" class="text-white px-10 py-4 bg-[#ffffff2b] rounded-full border-[var(--main-color)] border hover:scale-105 duration-200">
+        <a href="#" class="capitalize text-white px-10 py-4 bg-[#ffffff2b] rounded-full border-[var(--main-color)] border hover:scale-105 duration-200">
           free trial
         </a>
       </div>
@@ -50,7 +51,7 @@
         <!-- menu button -->
         <button id="menuOpenBtn"><i class="fa-solid fa-bars text-2xl text-white"></i></button>
 
-        <div id="menu" class="-translate-x-80 opacity-0 hidden w-full max-w-xs h-screen absolute top-0 left-0 p-4 flex-col items-start bg-[var(--second-color)] duration-200">
+        <div id="menu" class="-translate-x-80 opacity-0 hidden w-full max-w-xs h-screen fixed top-0 left-0 p-4 flex-col items-start bg-[var(--second-color)] duration-200">
           <!-- logo and close section -->
           <div class="w-full flex justify-between border-b border-[#dddddd83] pb-3">
             <!-- logo container -->
@@ -82,6 +83,91 @@
 
     </div>
   </nav>
+  <!-- navbar end -->
+
+  <!-- header start -->
+  <header class="w-full h-[calc(100vh_-_100px)] bg-[var(--second-color)] overflow-hidden relative before:absolute before:w-full before:h-full before:bg-[url(./assets/hero-bg.png)] before:bg-center before:bg-cover before:bg-no-repeat">
+    <div class="w-full xl:w-[1170px] h-full mx-auto max-xl:px-3 relative">  
+      <div id="content" class="w-full h-full flex flex-col items-center justify-center gap-8 relative z-20">
+        <h2 id="subHead" class="capitalize text-3xl font-semibold text-[var(--title-color)] relative 
+        before:absolute before:top-2/4 before:-left-16 lg:before:-left-28 before:-translate-y-2/4 before:w-10 lg:before:w-16 before:h-[1px] before:bg-[var(--title-color)] 
+        after:absolute after:top-2/4 after:-right-16 lg:after:-right-28 after:-translate-y-2/4 after:w-10 lg:after:w-16 after:h-[1px] after:bg-[var(--title-color)]">the best</h2>
+        <h1 id="head" class="capitalize text-3xl sm:text-6xl lg:text-8xl text-white font-semibold">digital marketing</h1>
+        <p id="title" class="capitalize text-lg text-[var(--title-color)] w-fit max-w-2xl text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores ab, aliquid ea quo est quos doloremque itaque sapiente laudantium.</p>
+        <a href="#" class="capitalize mt-5 text-white px-10 py-4 shadow-[0px_7px_20px_-7px_rgb(255_255_255_/_55%)] bg-[var(--main-color)] rounded-full border-[#ffffff2b] border hover:scale-105 duration-200">get started</a>
+      </div>
+
+      <div id="bgStyle" class="w-full h-full absolute top-0 left-0 z-10">
+        <img src="./assets/hero-trangels-1.png" class="absolute bottom-0 left-0">
+        <img src="./assets/big-object.png" class="absolute -bottom-8 -left-[105px] max-sm:hidden">
+        <img src="./assets/hero-trangels-2.png" class="absolute bottom-0 right-0">
+        <img src="./assets/med-object.png" class="absolute -bottom-8 -right-[105px] rotate-180 max-sm:-right-20 ">
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- brands start -->
+  <div id="brands" class="w-full h-[100px] max-md:h-max bg-[#f6fbf9]">
+    <div class="w-full xl:w-[1050px] h-full mx-auto max-xl:px-3 py-8 grid grid-cols-5 max-md:grid-cols-2 max-[500px]:grid-cols-1 justify-items-center items-center gap-14">
+      <img src="./assets/brands-slack.png" class="w-full max-w-[100px]">
+      <img src="./assets/brands-amazon.png" class="w-full max-w-[100px]">
+      <img src="./assets/brands-logitech.png" class="w-full max-w-[100px]">
+      <img src="./assets/brands-google.png" class="w-full max-w-[100px]">
+      <img src="./assets/brands-facebook.png" class="w-full max-w-[100px]">
+    </div>
+  </div>
+  <!-- brands end -->
+
+  <!-- strategic start -->
+  <div id="strategic" class="w-full bg-[var(--white-color)] mt-24">
+    <div class="w-full xl:w-[1170px] h-full mx-auto max-xl:px-3 flex max-lg:flex-col max-lg:items-center justify-between gap-16">
+      <!-- content -->
+      <div id="content" class="w-full lg:w-2/5 flex flex-col max-lg:items-center max-lg:text-center gap-8">
+        <h2 class="capitalize leading-normal text-4xl font-bold text-[var(--second-color)]">we're strategic digital marketing agency</h2>
+        <p id="title" class="capitalize leading-loose text-lg text-[var(--title-alt-color)] w-fit max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores ab, aliquid ea quo est quos doloremque itaque sapiente laudantium.</p>
+        <a href="#" class="group capitalize flex items-center gap-4 text-lg text-[var(--main-color)]"><span class="underline text-xl">see more</span><i class="fa-solid fa-arrow-right group-hover:animate-ltr"></i></a>
+      </div>
+
+      <!-- cards -->
+      <div id="cards" class="w-full lg:w-2/4 max-w-[730px] grid grid-cols-2 max-md:grid-cols-1 gap-16">
+        <div id="card" class="w-full flex flex-col items-start max-md:items-center max-md:text-center gap-6">
+          <img src="./assets/small-objects-cube.png" class="w-12" alt="">
+          <h3 class="text-xl capitalize font-bold text-[var(--second-color)]">contact strategy</h3>
+          <p id="title" class="capitalize leading-loose text-base text-[var(--title-alt-color)] w-fit max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores ab, aliquid ea</p>
+        </div>
+        <div id="card" class="w-full flex flex-col items-start max-md:items-center max-md:text-center gap-6">
+          <img src="./assets/small-objects-cube.png" class="w-12" alt="">
+          <h3 class="text-xl capitalize font-bold text-[var(--second-color)]">contact strategy</h3>
+          <p id="title" class="capitalize leading-loose text-base text-[var(--title-alt-color)] w-fit max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores ab, aliquid ea</p>
+        </div>
+        <div id="card" class="w-full flex flex-col items-start max-md:items-center max-md:text-center gap-6">
+          <img src="./assets/small-objects-cube.png" class="w-12" alt="">
+          <h3 class="text-xl capitalize font-bold text-[var(--second-color)]">contact strategy</h3>
+          <p id="title" class="capitalize leading-loose text-base text-[var(--title-alt-color)] w-fit max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores ab, aliquid ea</p>
+        </div>
+        <div id="card" class="w-full flex flex-col items-start max-md:items-center max-md:text-center gap-6">
+          <img src="./assets/small-objects-cube.png" class="w-12" alt="">
+          <h3 class="text-xl capitalize font-bold text-[var(--second-color)]">contact strategy</h3>
+          <p id="title" class="capitalize leading-loose text-base text-[var(--title-alt-color)] w-fit max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores ab, aliquid ea</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- strategic end -->
   <script src="./App.js"></script>
 </body>
 </html>
+
+
+<!-- 
+
+  ==== main container ====
+  w-screen h-[custom] bg-[custom] 
+
+  ==== container classes ====
+  w-full xl:w-[1170px] h-full mx-auto max-xl:px-3
+
+
+
+ -->
