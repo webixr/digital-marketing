@@ -12,3 +12,9 @@ close.addEventListener("click", () => {
     menu.classList.add("hidden", "-translate-x-80", "opacity-0")
 })
 // menu end
+
+document.querySelectorAll('.disabled-image').forEach((img) => {
+    img.addEventListener("dragstart", (e) => {
+        e.preventDefault();
+    })
+})
